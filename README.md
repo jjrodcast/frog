@@ -6,22 +6,7 @@ Frog is a library that can handle notifications for Android with compatibility o
 
 Download
 --------
-
-Step 1: Add it in your root build.gradle at the end of repositories:
-```gradle
-allprojects {
-  repositories {
-    maven { url 'https://jitpack.io' }
-  }
-}
-```
-
-Step 2: Add the dependency
-```gradle
-dependencies {
-  implementation 'com.github.jjrodcast:frog:v1.0.1'
-}
-```
+For now just download the project
 
 How do I use Frog?
 -------------------
