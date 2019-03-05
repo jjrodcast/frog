@@ -16,16 +16,18 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
+    /*
     signingConfigs {
         release
     }
+    */
 
     buildTypes {
         release {
             minifyEnabled true
             debuggable false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
+            //signingConfig signingConfigs.release
         }
         debug {
             minifyEnabled false
@@ -35,6 +37,7 @@ android {
         }
     }
 
+    /*
     def keystorePropertiesFile = rootProject.file('keystore.properties')
     def releaseConfig = 'release'
 
@@ -48,7 +51,7 @@ android {
         android.signingConfigs[releaseConfig].keyPassword = file(props['keyPassword'])
     } else {
         println("Error getting keystore.properties file")
-    }
+    }*/
 }
 
 dependencies {
