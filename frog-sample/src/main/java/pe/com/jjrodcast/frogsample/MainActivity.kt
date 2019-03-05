@@ -120,7 +120,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun createMessages(): List<FrogMessage> {
-
         val messages = arrayListOf<FrogMessage>()
         for (i in 0..2) {
             val date = Date()
@@ -128,7 +127,6 @@ class MainActivity : AppCompatActivity() {
             val person = FrogPerson("Person ${i + 1}")
             messages.add(FrogMessage("This is te message $i", timestamp.time, person))
         }
-
         return messages.toList()
     }
 
@@ -178,11 +176,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun simpleNotificationSendActivity() {
+        //1. Metadata for the notification
         val bundle = Bundle()
         bundle.putString("name", "OneCode-Frog")
         bundle.putInt("version", 1)
         bundle.putBoolean("fromNotification", true)
-
+        //2. Create the notification with click method
         FrogNotification.get()
             .init(FrogChannel("channelId", "channelName", NotificationManagerCompat.IMPORTANCE_DEFAULT))
             .contentTitle("Open Activity Notification")
