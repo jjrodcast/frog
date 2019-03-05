@@ -20,7 +20,6 @@ import android.content.Context
 import android.net.Uri
 import android.support.annotation.RestrictTo
 
-@RestrictTo(RestrictTo.Scope.LIBRARY)
 internal class FrogContentProvider : ContentProvider() {
 
     companion object {
