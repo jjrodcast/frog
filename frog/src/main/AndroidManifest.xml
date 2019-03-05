@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="pe.com.jjrodcast.frog">
+
+    <application>
+        <provider android:authorities="${applicationId}.pe.com.jjrodcast.frog"
+                  android:name=".providers.FrogContentProvider"
+                  android:exported="false"/>
+    </application>
+
+</manifest>
