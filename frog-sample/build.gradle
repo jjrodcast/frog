@@ -52,6 +52,7 @@ android {
     } else {
         println("Error getting keystore.properties file")
     }*/
+    
 }
 
 dependencies {
